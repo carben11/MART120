@@ -1,3 +1,0 @@
-Auditory: 15%
-Visual: 25%
-Tactile: 60%
