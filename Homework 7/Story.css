@@ -1,0 +1,27 @@
+﻿ext
+{
+	font-size: 40px;
+	font-family: "papyrus", fantasy;
+}
+.ext2
+{
+	font-size: 25px;
+	color: royalblue;
+}
+#link
+{
+	color: green;
+	text-decoration: overline;
+}
+#dsc
+{
+	text-align: center;
+	text-shadow: 2px 2px 5px red;
+	font-size: 15px;
+}
+body{
+    background-color: beige;
+    background-image: url('HP.png');
+    background-repeat: no-repeat;
+	background-position: center;
+}
