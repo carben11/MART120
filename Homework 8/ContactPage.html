@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ContactPage</title>
+    </head>
+    <body>
+        <h3>Terms of Service</h3>
+        <br><br>
+        <form>
+            First Name: <input type="text" id="fName"><br>
+            Last Name: <input type="text" id="lName"><br>
+            Email Adress: <input type="text" id="eAdress"><br>
+            <h4 id="checkText">By checking this box you agree to the terms of service </h4>
+            <input type="checkbox" id="check" value="agree">
+            <br>
+        </form>
+        <button onclick="getInfo();">Submit</button>
+    </body>
+    <script>
+        function getInfo()
+        {
+            var b1= document.getElementById("fName").value;
+            var b2= document.getElementById("lName").value;
+            var b3= document.getElementById("eAdress").value;
+            var b4= document.getElementById("check");
+            if(b1 == "")
+            {
+                document.getElementById("fName").focus();
+                document.getElementById("fName").style.backgroundColor = "red";
+            }
+            else
+            {
+                document.getElementById("fName").style.backgroundColor = "white";
+                document.getElementById("fName").blur();
+            }
+            if(b2 == "")
+            {
+                document.getElementById("lName").focus();
+                document.getElementById("lName").style.backgroundColor = "red";
+            }
+            else
+            {
+                document.getElementById("lName").style.backgroundColor = "white";
+                document.getElementById("lName").blur();
+            }
+            if(b3 == "")
+            {
+                document.getElementById("eAdress").focus();
+                document.getElementById("eAdress").style.backgroundColor = "red";
+            }
+            else
+            {
+                document.getElementById("eAdress").style.backgroundColor = "white";
+                document.getElementById("eAdress").blur();
+            }
+            if(b4 == "agree")
+            {
+               document.getElementById("checkText").style.color = "black";
+               document.getElementById("checkText").blur();
+            }
+            else
+            {
+               document.getElementById("checkText").style.color = "red";
+               document.getElementById("checkText").focus();
+            }
+        }
+    </script>
+</html>
