@@ -65,8 +65,8 @@ function mousePressed()
 	originX = playerX;
 	originY = playerY;
 
-	bulletX = playerX;
-	bulletY = playerY;
+	bulletX = originX;
+	bulletY = originY;
 }
 
 function win()
@@ -119,11 +119,11 @@ function shoot()
 	circle(bulletX + 25, bulletY + 25, 20);
 	if(bulletX < 1900 || bulletX > 0)
 	{
-		bulletX += originX + (targetX - originX) / 100;
+		bulletX += (targetX - originX)/100;
 	}
 
 	if(bulletY < 980 || bulletY > 0)
 	{
-		bulletY += originY + (targetY - originY) / 100;
+		bulletY += (targetY - originY)/100;
 	}
 }
