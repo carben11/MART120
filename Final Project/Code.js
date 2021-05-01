@@ -165,6 +165,7 @@ this.addEventListener('keypress', event => {
 
 function lose()
 {
+	enemies.length = 0;
 	noLoop();
 	fill(255);
 	rect(0,0,2000,1000);
